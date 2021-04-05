@@ -18,17 +18,19 @@ function Task({ toDo_task, index }) {
                     textDecoration: toDo_task.isDone ? "line-through" : "none",
                 }}
             >
-                <span className="Task_Number">Task {Number(index) + 1}:</span>
+                <span className="Task_Number">Task {Number(index) + 1}: </span>
                 {toDo_task.task}
             </h4>
             <div className="taskBtns">
                 <Button
-                    variant={toDo_task.isDone ? "outline-danger" : "success"}
+                    variant={
+                        toDo_task.isDone ? "outline-danger" : "outline-success"
+                    }
                     onClick={handleClick}
                 >
                     {toDo_task.isDone ? "Undo" : "Done"}
                 </Button>
-                <EditTask />
+                <EditTask id={toDo_task.id} />
             </div>
         </div>
     );

@@ -19,11 +19,11 @@ function AddTask() {
 
     return (
         <div className="AddTask">
-            <h1>Todo App!</h1>
+            <h1>To Do list !</h1>
             <div className="addField">
                 <Form.Control
                     id="addTaskInput"
-                    size="lg"
+                    size="50%"
                     type="text"
                     placeholder="Add task..."
                     onChange={(e) => handleChange(e.target.value)}
@@ -31,7 +31,11 @@ function AddTask() {
                 />
                 <Button
                     variant="outline-primary"
-                    style={{ border: "2px white solid", color: "white" }}
+                    style={{
+                        border: "2px grey solid",
+                        borderRadius: "5px",
+                        color: "black",
+                    }}
                     onClick={handleSubmit}
                 >
                     Add

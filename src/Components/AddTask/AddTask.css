@@ -4,11 +4,11 @@
     justify-content: center;
     align-items: center;
     padding: 3%;
-    background-color: rgb(25, 68, 110);
+    background-color: rgb(189, 209, 228);
 }
 .addField {
     display: flex;
-    width: 70%;
+    width: 20%;
 }
 .addField > * {
     margin: 1%;
