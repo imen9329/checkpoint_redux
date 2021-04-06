@@ -35,7 +35,7 @@ export default function todosReducer(state = initialState, action) {
             return {
                 todos: state.todos.map((task) =>
                     task.id === payload.id
-                        ? { task: payload.modifiedTask }
+                        ? { ...task, task: payload.modifiedTask }
                         : task
                 ),
             };
